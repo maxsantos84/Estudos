@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#decimo.sh - Nosso decimo programa em shell - Laço de repetição For
+#mrrobot.sh - Nosso decimo programa em shell - Laço de repetição For
 #
 #Homepage: https://teste.teste.com.br
 #Autor: Maxwell Santos <maxwellotavio@msn.com>
@@ -31,7 +31,7 @@ while true; do
 			ping -c 4 -4 "${sites[$DADO]}"
 			
 			;;
-		*"nmap"*|*"mapear"*|*"portas"*)
+		*"nmap"*|*"mapear"*|*"portas"*|*"varredura"*)
 			DADO="$(( $RANDOM % 10 ))"
 			nmap -sS "${sites[$DADO]}"
 			
